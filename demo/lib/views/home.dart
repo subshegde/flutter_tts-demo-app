@@ -52,10 +52,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(120),
+        preferredSize: const Size.fromHeight(120),
         child: AppBar(
           backgroundColor: Colors.blueAccent,
-          shape: RoundedRectangleBorder(
+          shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(40),
               bottomRight: Radius.circular(40),
@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           title: Text(
             widget.title,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
               letterSpacing: 1.5,
@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           centerTitle: true,
           flexibleSpace: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors: [Colors.blue, Colors.purple],
                 begin: Alignment.topLeft,
